@@ -1,0 +1,29 @@
+.inputWrap {
+  margin: auto;
+  text-align: center;
+}
+
+.input {
+  padding: 12px;
+  background-color: rgba(165, 155, 155, 0.1);
+  border: 1px solid rgb(214, 216, 218);
+  border-radius: 6px;
+  width: 30%;
+  font-size: 120%;
+}
+
+.input:focus {
+  border: 1px solid black;
+  outline: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .input {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 640px) {
+  .input {
+    width: 90%;
+  }
+}

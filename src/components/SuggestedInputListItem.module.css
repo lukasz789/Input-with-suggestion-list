@@ -1,0 +1,15 @@
+.listItem {
+  text-decoration: none;
+  list-style-type: none;
+  padding: 0.5rem;
+  background-color: #fdfbfb;
+}
+
+.listItem strong {
+  text-transform: capitalize;
+}
+
+.listItem:hover {
+  cursor: pointer;
+  background-color: lightgray;
+}

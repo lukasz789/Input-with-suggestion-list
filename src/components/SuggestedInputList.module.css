@@ -1,0 +1,23 @@
+.filtered-list {
+  margin: auto;
+  text-align: center;
+  width: 30%;
+  padding-left: 0px;
+  border-left: 1px solid #d4d4d4;
+  border-right: 1px solid #d4d4d4;
+}
+
+.filtered-list li {
+  border-bottom: 1px solid #d4d4d4;
+}
+
+@media screen and (max-width: 1024px) {
+  .filtered-list {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 640px) {
+  .filtered-list {
+    width: 90%;
+  }
+}
