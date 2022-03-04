@@ -44,7 +44,7 @@ const SearchWrap = () => {
           });
           break;
         default:
-        //no nothing
+        // do nothing
       }
     }
   };

@@ -9,8 +9,6 @@ import SuggestedInputListItem from "./SuggestedInputListItem";
 const SuggestedInputList = () => {
   const data = useSelector((state) => state.data);
 
-  console.log("RENDER LIST");
-
   return (
     <>
       {data.length ? (

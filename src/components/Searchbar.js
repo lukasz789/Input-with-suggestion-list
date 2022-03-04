@@ -14,10 +14,10 @@ const Searchbar = (props) => {
 
   useEffect(() => {
     if (Object.keys(enteredDataItem).length > 0) {
-      inputRef.current.value = enteredDataItem.name;
+      inputRef.current.value = enteredDataItem.username;
       dispatch({
         type: actionTypes.SET_CURRENT_INPUT_VALUE,
-        currentInputValue: enteredDataItem.name,
+        currentInputValue: enteredDataItem.username,
       });
 
       dispatch({ type: actionTypes.SET_DATA, newData: [] });
@@ -33,10 +33,10 @@ const Searchbar = (props) => {
       currentInputValue: event.target.value,
     });
 
-    // for data with bigger size could render (& save in redux store) only part of items in data that are matching with input value
+    // for data with bigger size could render (& save in redux store) only part of items in data that are matching with input value(using .slice())
     // here only 10 total items, so I will skip it
     const filtered = props.initialData.filter((value) => {
-      return value.name
+      return value.username
         .toString()
         .toLowerCase()
         .startsWith(enteredInput.toLowerCase());

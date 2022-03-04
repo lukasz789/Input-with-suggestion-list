@@ -5,7 +5,6 @@ import classes from "./SuggestedInputListItem.module.css";
 import { useSelector, useDispatch } from "react-redux";
 import { actionTypes } from "../store-redux/actionTypes";
 
-//react.memo ; rerender tylko jak sie zmienia tu
 const SuggestedInputListItem = (props) => {
   const dispatch = useDispatch();
 
@@ -13,9 +12,6 @@ const SuggestedInputListItem = (props) => {
   const [nonBoldText, setNonBoldText] = useState("");
 
   const currentDataItem = useSelector((state) => state.currentDataItem);
-
-  console.log("render item list", props.itemData.id);
-
   const currentInputValue = useSelector((state) => state.currentInputValue);
 
   useEffect(() => {
@@ -27,7 +23,7 @@ const SuggestedInputListItem = (props) => {
   }, [currentDataItem]);
 
   useEffect(() => {
-    const newNonBoldText = props.itemData.name.substring(
+    const newNonBoldText = props.itemData.username.substring(
       currentInputValue.length
     );
     setNonBoldText(newNonBoldText);
