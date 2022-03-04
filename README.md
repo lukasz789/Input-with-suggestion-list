@@ -4,7 +4,7 @@
 
 ## Description
 
-_Input with suggestion list from values of names from https://jsonplaceholder.typicode.com/users._
+_Auto-complete input field with user name suggestions from https://jsonplaceholder.typicode.com/users._
 
 ## Preview
 
