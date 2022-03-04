@@ -23,7 +23,7 @@ const SuggestedInputListItem = (props) => {
   }, [currentDataItem]);
 
   useEffect(() => {
-    const newNonBoldText = props.itemData.username.substring(
+    const newNonBoldText = props.itemData.name.substring(
       currentInputValue.length
     );
     setNonBoldText(newNonBoldText);
