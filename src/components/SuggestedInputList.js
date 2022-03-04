@@ -1,8 +1,8 @@
 import React from "react";
 
-import { useSelector } from "react-redux";
-
 import classes from "./SuggestedInputList.module.css";
+
+import { useSelector } from "react-redux";
 
 import SuggestedInputListItem from "./SuggestedInputListItem";
 

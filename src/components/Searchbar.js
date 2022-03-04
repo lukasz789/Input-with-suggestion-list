@@ -33,7 +33,7 @@ const Searchbar = (props) => {
       currentInputValue: event.target.value,
     });
 
-    // for data with bigger size could render (& save in redux store) only part of items in data that are matching with input value(using .slice())
+    // for data with bigger size could render (& save in redux store) only fraction of items in data that are matching with input value(using .slice())
     // here only 10 total items, so I will skip it
     const filtered = props.initialData.filter((value) => {
       return value.username
